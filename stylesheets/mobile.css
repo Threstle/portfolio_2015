@@ -1,0 +1,23 @@
+body .section {
+  min-height: 100%;
+  height: auto;
+}
+body .section .textLeft {
+  width: 90%;
+  margin: 5%;
+  min-width: 90%;
+}
+body .section iframe {
+  width: 90%;
+  margin: 5%;
+}
+body .section ul {
+  width: 90%;
+  text-align: center;
+  position: relative;
+  margin: 5%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-bottom: 5%;
+}

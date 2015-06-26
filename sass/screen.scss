@@ -4,3 +4,120 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+$h1Size : 9vh;
+$h2Size : 8vh;
+$pSize : 3.5vh;
+
+$blue : #185E9A;
+$cyan : #538EA0;
+$yellow : #EBAB15;
+
+
+
+@font-face {
+      font-family: "PierSans";
+      src: url("font/PierSans/pier-regular.otf");
+    }
+
+html, body {
+	width : 100% ;
+	height : 100% ;
+	margin : 0 ;
+	padding : 0 ;
+	color: $blue;
+}
+
+h1{
+	font-family: "PierSans";
+	font-size: $h1Size;
+	color: white;
+}
+
+h2{
+	font-family: "PierSans";
+	font-size: $h2Size;
+	color: white;
+}
+
+p{
+	font-family: "PierSans";
+	font-size: $pSize;
+	color: white;
+	line-height: 35px;
+}
+
+body{
+	
+	.smooth{
+		opacity: 0;
+		transition: all 2s;
+	}
+
+	.appearOpacity{
+		opacity: 1;
+
+	}
+
+	.section{
+		height: 100%;
+		width: 100%;
+    	vertical-align: middle;
+    	position: relative;
+	
+    	.textLeft{
+			min-width: 700px;
+			margin: 5% 5% 0% 5%;
+			float: left;
+			max-width: 50%;
+
+    		h2{
+    			margin-bottom: 3%;
+    		}
+    	}
+
+    	iframe{
+    		width: 30%;
+			margin-top: 11%;
+    	}
+
+    	ul{
+			width: 100%;
+			text-align: right;
+    		height: 200px;
+    		position: absolute;
+    		bottom: 5%;
+    		right: 5%;
+    	}
+
+    	li{
+    		height: 100%;
+    		display: inline-block;
+    		margin: 0% 1% 0% 1%;
+    		img{
+    			height: 200px;	
+    		}
+    	}
+	}
+	
+	header{
+		background-color: $blue;
+
+		h1{
+		  color: white;
+		  top: 0;
+		  left: 0;
+		  bottom: 0;
+		  right: 0;
+		  position: absolute;
+		  margin: auto;
+		  height: 10%;
+		  width: 90%;
+		  text-align: center;
+		}
+	}
+
+	#courtcircuit{
+		background-color: $yellow;
+	}
+}
